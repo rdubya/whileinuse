@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Demo Page</title>
+	<script src="http://cdn.jsdelivr.net/jquery/2.1.1/jquery.js"></script>
+	<script src="jquery.whileinuse.min.js"></script>
+</head>
+<body>
+	<h1>When In Use jQuery Plugin</h1>
+	<p>
+		Move your mouse around the screen (or touch the screen on a mobile device) to see the handlers run<br>
+		red() is scheduled to run every 3 seconds while the page is in use<br>
+		blue() is scheduled to run every 5 seconds while the page is in use<br>
+		green() is scheduled to run every 7 seconds but will only run a maximum of 4 times
+	</p>
+	<div id="output"></div>
+	<script>
+		var greenCount = 0;
+
+		function output(text) {
+			$('#output').append('<div>' + Date() + text + '</div>');
+		}
+
+		function red() {
+			output(' - <span style="color: red;">red() ran</span>');
+		}
+
+		function blue() {
+			output(' - <span style="color: blue;">blue() ran</span>');
+		}
+
+		function green() {
+			output(' - <span style="color: green;">green() ran</span>');
+			return ++greenCount != 4;
+		}
+
+		$.whileInUse(red, 3000);
+		$.whileInUse(blue, 5000);
+		$.whileInUse(green, 7000);
+		output(' - Loaded');
+	</script>
+</body>
+</html>
