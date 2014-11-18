@@ -10,7 +10,7 @@ To schedule a callback, pass it and an interval (in milliseconds) to $.whenInUse
       console.log('Sweet!');
     }
     
-    $.whenInUse(makeAwesomeSauce, 1000);
+    $.whileInUse(makeAwesomeSauce, 1000);
 
 To discontinue an interval, explicitly return false from the callback.
     
@@ -21,7 +21,7 @@ To discontinue an interval, explicitly return false from the callback.
         return ++count != 4;
     }
     
-    $.whenInUse(stopAtFour, 5000);
+    $.whileInUse(stopAtFour, 5000);
 
 ## Requirements
 Requires [jQuery](http://jquery.com) - Tested with 2.1.1 but should work with any version that supports .one()
