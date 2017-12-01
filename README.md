@@ -31,7 +31,3 @@ Requires [jQuery](http://jquery.com) - Tested with 2.1.1 but should work with an
 Copyright (c) 2014 Rob Widmer.
 While In Use is released under the MIT License. See the bundled LICENSE file for
 details.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/rdubya/whileinuse/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
