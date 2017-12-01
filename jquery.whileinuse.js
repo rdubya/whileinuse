@@ -1,5 +1,5 @@
 /*!
- * When In Use jQuery utility v0.0.1
+ * While In Use jQuery utility v0.0.1
  *
  * Copyright 2014 Rob Widmer
  * Released under the MIT license
