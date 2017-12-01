@@ -4,7 +4,7 @@ This small utility (less than 400 bytes minified) allows you to schedule a callb
 
 ## Usage
 
-To schedule a callback, pass it and an interval (in milliseconds) to $.whenInUse.
+To schedule a callback, pass it and an interval (in milliseconds) to $.whileInUse.
     
     function makeAwesomeSauce() {
       console.log('Sweet!');
